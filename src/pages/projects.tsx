@@ -28,7 +28,11 @@ export default function Projects() {
                   </a>
                 </div>
               </div>
-              <img className='card-hero' src={AtlasHero} />
+              <img
+                className='card-hero'
+                src={AtlasHero}
+                alt='screenshot of the Atlas Terrain asset store (in development)'
+              />
             </section>
 
             <section className='about-section card'>

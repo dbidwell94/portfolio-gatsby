@@ -151,7 +151,7 @@ export default function Sidebar() {
 
   return (
     <SidebarContainer onMouseOver={() => setIsOpened(true)} onMouseLeave={() => setIsOpened(false)}>
-      <button className={`mobile-expand${isOpened ? ' opened' : ''}`} />
+      <button className={`mobile-expand${isOpened ? ' opened' : ''}`} aria-label='expand sidebar' />
       <div className='links'>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/portfolio'>Portfolio</NavLink>
