@@ -23,8 +23,8 @@ export default function Projects() {
                   using either pre-made stamps or stamps created by the user.
                 </p>
                 <div className='links'>
-                  <a href='#' target='_blank'>
-                    <strong>Link not available due to proprietary code.</strong>
+                  <a href='https://atlasterrain.com' target='_blank'>
+                    Atlas Terrain
                   </a>
                 </div>
               </div>
