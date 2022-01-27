@@ -50,7 +50,7 @@ export default function Index() {
                   that I was not a fan of vanilla JavaScript. Because I had prior knowledge in C# with the Unity game
                   engine and Java with Spring I grew more closely attached to TypeScript. After bootcamp I found an
                   excellent placement with Accretive Technology Group in Seattle, Washington. At ATG I am able to
-                  further develop my skills in other languages and skills. I also thoroughly enjoy teaching others the
+                  further develop my skills in other languages and frameworks. I also thoroughly enjoy teaching others the
                   ins and outs of TypeScript and React.JS.
                 </p>
               </div>
