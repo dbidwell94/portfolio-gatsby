@@ -23,7 +23,7 @@ export default function Projects() {
                   using either pre-made stamps or stamps created by the user.
                 </p>
                 <div className='links'>
-                  <a href='#' style={{ marginTop: '1rem' }}>
+                  <a href='#' target='_blank'>
                     <strong>Link not available due to proprietary code.</strong>
                   </a>
                 </div>
@@ -44,8 +44,12 @@ export default function Projects() {
                   HMStream to work securely in-browser.
                 </p>
                 <div className='links'>
-                  <a href='https://github.com/dbidwell94/HMStreamBackend'>HMStream Backend</a>
-                  <a href='https://github.com/dbidwell94/hmStreamFrontend'>HMStream Frontend</a>
+                  <a href='https://github.com/dbidwell94/HMStreamBackend' target='_blank'>
+                    HMStream Backend
+                  </a>
+                  <a href='https://github.com/dbidwell94/hmStreamFrontend' target='_blank'>
+                    HMStream Frontend
+                  </a>
                 </div>
               </div>
             </section>
@@ -59,7 +63,9 @@ export default function Projects() {
                   to create a DNS Response from that request to send back to the endpoint that sent the request.
                 </p>
                 <div className='links'>
-                  <a href='https://github.com/dbidwell94/dotnet-dns-server'>Dotnet DNS Server</a>
+                  <a href='https://github.com/dbidwell94/dotnet-dns-server' target='_blank'>
+                    Dotnet DNS Server
+                  </a>
                 </div>
               </div>
             </section>
