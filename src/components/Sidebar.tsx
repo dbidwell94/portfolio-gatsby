@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import NavLink from './NavLink';
 
@@ -19,7 +19,6 @@ const sidebarSlideOut = (collapsedSize: number) => keyframes`
 
   to {
     width: 3rem;
-    
   }
 `;
 
@@ -52,6 +51,12 @@ const SidebarContainer = styled.nav`
   position: relative;
   box-shadow: 0rem 0rem 0.25rem 0rem black;
   transition: 0.125s ease-in-out background;
+  button.mobile-expand {
+    display: none;
+    &::after {
+      display: none;
+    }
+  }
   &:hover {
     background: ${({ theme }) => theme.colors.white(30)};
   }
@@ -108,12 +113,45 @@ const SidebarContainer = styled.nav`
       opacity: 0;
       animation: ${linkFadeOut} 0.125s ease-in-out 0s forwards;
     }
+
+    button.mobile-expand {
+      display: block;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 0.25rem;
+      border: none;
+      outline: none;
+      background: transparent;
+      &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        top: 50%;
+        left: 50%;
+        border: 0.125rem solid ${({ theme }) => theme.colors.secondary};
+        border-width: 0.125rem 0.125rem 0rem 0rem;
+        transform: translate(-65%, -50%) rotate(45deg);
+        transition: 0.125s ease-in-out transform;
+      }
+
+      &.opened {
+        &::after {
+          transform: translate(-35%, -50%) rotate(-135deg);
+        }
+      }
+    }
   }
 `;
 
 export default function Sidebar() {
+  const [isOpened, setIsOpened] = useState(false);
+
   return (
-    <SidebarContainer>
+    <SidebarContainer onMouseOver={() => setIsOpened(true)} onMouseLeave={() => setIsOpened(false)}>
+      <button className={`mobile-expand${isOpened ? ' opened' : ''}`} />
       <div className='links'>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/portfolio'>Portfolio</NavLink>

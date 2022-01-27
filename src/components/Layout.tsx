@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
     };
 
     p, link, button, a {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 
     small {

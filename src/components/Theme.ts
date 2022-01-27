@@ -16,6 +16,8 @@ export const theme = {
     ubuntuMono: "'Ubuntu-mono', monospace",
   },
   breakpoints: {
+    smallLaptop: '1440px',
+    laptop: '1200px',
     mobile: '750px',
     largeMobile: '900px',
   },
