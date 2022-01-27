@@ -1,100 +1,9 @@
 import * as React from 'react';
-import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
+import IndexContainer from '../components/IndexContainer';
 /// @ts-ignore
 import hero from '../assets/images/Hero.jpg';
-
-const IndexContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  section.content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem 10rem;
-    position: relative;
-    overflow-y: auto;
-
-    @media screen and (max-width: ${({ theme }) => theme.breakpoints.largeMobile}) {
-      padding: 1rem 1rem;
-    }
-
-    h1.hero-hello {
-      margin-bottom: 1rem;
-      color: ${({ theme }) => theme.colors.primary};
-    }
-    img {
-      height: calc(100vh * 0.2);
-      width: calc(100vh * 0.2);
-      border-radius: 20rem;
-      object-fit: cover;
-      margin-bottom: 2rem;
-    }
-    p {
-      font-size: 1.25rem;
-      line-height: 1.375rem;
-    }
-
-    section.about-section {
-      display: flex;
-      width: 100%;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-
-    div.cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-      grid-gap: 1rem;
-      margin-top: 1rem;
-      @media screen and (max-width: ${({ theme }) => theme.breakpoints.laptop}) {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    section.card {
-      background: ${({ theme }) => theme.colors.white(10)};
-      color: black;
-      padding: 1rem;
-      box-shadow: 0rem 0rem 0.25rem 0rem black;
-      transition: 0.125s ease-in-out background;
-      border-radius: 0.5rem;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      h2,
-      h1 {
-        color: ${({ theme }) => theme.colors.primary};
-        margin-left: 2rem;
-        margin-bottom: 0.5rem;
-      }
-      &:hover {
-        background: ${({ theme }) => theme.colors.white(30)};
-      }
-
-      @media screen and (max-width: ${({ theme }) => theme.breakpoints.smallLaptop}) {
-        h1,
-        h2 {
-          font-size: 1.75rem;
-          margin-left: 0;
-          text-align: center;
-          align-self: center;
-        }
-
-        p {
-          font-size: 1rem;
-          line-height: 1.125rem;
-        }
-      }
-    }
-  }
-`;
 
 export default function Index() {
   return (
@@ -136,12 +45,12 @@ export default function Index() {
               <h2>Professional (software)</h2>
               <div className='content'>
                 <p>
-                  I started my professional software development career by attending a web developement bootcamp. There
+                  I started my professional software development career by attending a web development bootcamp. There
                   I learned React.JS, vanilla JavaScript, Node.JS, Java Spring, and Python. I quickly learned, however,
                   that I was not a fan of vanilla JavaScript. Because I had prior knowledge in C# with the Unity game
                   engine and Java with Spring I grew more closely attached to TypeScript. After bootcamp I found an
                   excellent placement with Accretive Technology Group in Seattle, Washington. At ATG I am able to
-                  further develop my skills in other languages and skills. I also throughly enjoy teaching others the
+                  further develop my skills in other languages and skills. I also thoroughly enjoy teaching others the
                   ins and outs of TypeScript and React.JS.
                 </p>
               </div>
